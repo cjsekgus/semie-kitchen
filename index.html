@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새미네부엌</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {     
+            list-style: none;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        body {
+            color: #333;
+            line-height: 1;
+        }
+
+        header {
+            height: 100px;
+            border-bottom: 1px solid #eee;
+        }
+        header .inner {
+            width: calc(100% - 180px);
+            height: 100%;
+            
+            margin: 0 auto;
+            display: flex;/* 로고 옆에 붙음 */
+            justify-content: space-between;
+            align-items: center; /* 로고 및 카테고리 가운데 수직 정렬 */
+
+        }
+        header .inner ul {
+            display: flex;
+            align-items: center;
+        }
+        header .inner nav ul li {
+            /* 양쪽에서 여백 설정 늘리기 */
+            margin: 0px 30px;
+        }
+        header .inner nav ul li a {
+            display: flex;
+            align-items: center;
+        }
+        header .inner .right_menu li:nth-child(1) {
+            margin-right: 20px;
+        }
+
+        /* 🎈 .main_visual */
+        .main_visual {
+            width: calc(100% - 180px);
+            margin: 0 auto;
+        }
+        .main_visual img {
+            width: 100%;
+        }
+
+        /* 🎈 .cont01 */
+        .cont01 {
+            padding: 80px 0;
+        }
+        .cont01 .inner{
+            width: 1440px;
+            margin: 0 auto;
+           
+        }
+
+        .cont01 .inner h3 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cont01 .inner .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
+
+        .cont01 .inner .list .item div ul li {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 40px;
+        }
+        .cont01 .inner .list .item div ul li img {
+            vertical-align: middle;
+            margin-top: 30px;
+        }
+        /* 인라인요소가 있을 떄 수직정렬
+        inline,
+        display:inline,
+        display:inline-block
+         */
+
+         
+
+         
+        
+        .cont01 .inner .list .item {
+            width: 342px;
+            margin-bottom: 50px;
+        }
+        
+        .cont01 .inner .list .item:hover figure img {
+            transform: scale(1.2);
+            /* 선택자 확대(1.2배 만큼) */
+        }
+        
+        .cont01 .inner .list .item figure img {
+            width: 100%;
+            transition: 0.7s;
+        }
+        .cont01 .inner .list .item figure {
+            width: 342px;
+            height: 342px;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+
+        .cont01 .inner .list .item h4 {
+            margin-top: 26px;
+        }
+        .cont01 .inner .list .item p {
+            margin-top: 23px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="inner">
+            <h1>
+            <a href="#">
+                <img src="img/semie-cooking-logo.svg" alt="새미네부엌" />
+
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">요리 상담소</a></li>
+                <li><a href="#">요리법 연구소</a></li>
+                <li><a href="#">요리해요</a></li>
+                <li><a href="#">맛있는 추억을 그리다</a></li>
+                <img src="img/semie-wow.svg" alt="wow" />
+                <li><a href="#">이벤트</a></li>
+            </ul>
+        </nav>
+        <ul class="right_menu">
+            <li><a href="#"> <img src="img/icons8-수색-50.png" alt="검색"></a></li>
+            <li><a href="#"> <img src="img/i" alt="로그인"></a></li>
+        </ul><!-- right_menu end -->
+        </div> <!-- inner end -->
+        
+    
+    </header>
+
+    <section class="main_visual">
+        <div>
+            <img src="img/sememain.jpg" alt="나를 즐겁게 한 요리">
+        </div><!-- .main_visual end -->
+    </section>
+
+    <section class="cont01">
+        <div class="inner">
+            <h3>우리 함께 요리해볼까요?</h3>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/마라탕.jpg" alt="마라탕">
+                    </figure>
+                    <div>
+                        <h4>스트레스가 날아가는 순간!</h4>
+                        <p>찌릿! 매콤얼얼마랑탕과 마라샹궈</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 55 </span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-24.png" alt="댓글">
+                                <span> 37 </span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div><!-- item01 end -->
+                    
+                <div class="item">     
+                    <figure>
+                            <img src="img/대구탕.jpg" alt="대구탕">
+                    </figure>
+                    <div>
+                        <h4>추운 겨울 생각나는 뜨끈~한 국물요리</h4>
+                        <p>바다향 가득 대구지리탕</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 17 </span>
+                            </li>
+                            <li>
+                                <img src="img/icons8-이야기-24.png" alt="댓글">
+                                <span> 10 </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- item02 end -->
+
+                <div class="item">  
+                    <figure>
+                            <img src="img/수육.jpg" alt="수육">
+                    </figure>
+                    <div>
+                        <h4>김장철, 남은 배추가 있다면?</h4>
+                        <p>취향따라 2가지 수육</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 39</span>                                    </li>
+                            <li>
+                                <img src="img/icons8-이야기-24.png" alt="댓글">
+                                <span> 25 </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- item03 end -->
+
+                <div class="item">    
+                    <figure>
+                            <img src="img/뭇국.jpg" alt="뭇국">
+                    </figure>
+                    <div>                                    
+                        <h4>육지 채소로 건강한 집밥</h4>
+                        <p>담백하게 또는 얼큰하게! 두 가지 뭇국</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 31</span>
+                           </li>
+                           <li>
+                              <img src="img/icons8-이야기-24.png" alt="댓글">
+                            <span> 11 </span>  
+                           </li>
+                        </ul>        
+                    </div>
+                </div> <!-- item04 end -->
+
+                <div class="item">    
+                    <figure>
+                            <img src="img/토마토전.jpg" alt="토마토전  ">
+                    </figure>
+                    <div>                                    
+                        <h4>지구를 위해 채소해요</h4>
+                        <p>달큰향긋 토마토바질전</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 13</span>
+                           </li>
+                           <li>
+                              <img src="img/icons8-이야기-24.png" alt="댓글">
+                            <span> 9 </span>  
+                           </li>
+                        </ul>        
+                    </div>
+                </div> <!-- item05 end -->
+
+                <div class="item">    
+                    <figure>
+                            <img src="img/스테이크.jpg" alt="스테이크  ">
+                    </figure>
+                    <div>                                    
+                        <h4>손님 초대 요리는 이렇게, 집들이 음식!</h4>
+                        <p>스테이크와 사이드 누른알감자</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 46</span>
+                           </li>
+                           <li>
+                              <img src="img/icons8-이야기-24.png" alt="댓글">
+                            <span> 33 </span>  
+                           </li>
+                        </ul>        
+                    </div>
+                </div> <!-- item06 end -->
+
+                <div class="item">    
+                    <figure>
+                            <img src="img/스낵랩.jpg" alt="스낵랩  ">
+                    </figure>
+                    <div>                                    
+                        <h4>배달요리 이렇게 변신!</h4>
+                        <p>돌돌말아 치킨 스낵랩</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 27</span>
+                           </li>
+                           <li>
+                              <img src="img/icons8-이야기-24.png" alt="댓글">
+                            <span> 11 </span>  
+                           </li>
+                        </ul>        
+                    </div>
+                </div> <!-- item07 end -->
+                
+                <div class="item">    
+                    <figure>
+                            <img src="img/된장수제비.jpg" alt="된장수제비  ">
+                    </figure>
+                    <div>                                    
+                        <h4>따뜻한 음식이 생각난다면?</h4>
+                        <p>따뜻구수 된장수제비</p>
+                        <ul>
+                            <li>
+                                <img src="img/icons8-하트-24.png" alt="좋아요">
+                            <span> 20</span>
+                           </li>
+                           <li>
+                              <img src="img/icons8-이야기-24.png" alt="댓글">
+                            <span> 7</span>  
+                           </li>
+                        </ul>        
+                    </div>
+                </div> <!-- item08 end -->
+                </div>
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section> <!-- .cont01 end -->
+
+</body>
+
+</html>
